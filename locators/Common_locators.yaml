@@ -1,0 +1,3 @@
+search_textfield : //input[@placeholder = "พิมพ์สิ่งที่ต้องการค้นหา" and @name = "q"]
+search_button : //button[contains(text(),"ค้นหา")]
+header_scbeasyapp: //h3[contains(text(),"SCB EASY App")]

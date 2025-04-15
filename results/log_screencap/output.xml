@@ -1,0 +1,630 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.9.6 on win32)" generated="2025-03-30T18:16:31.727664" rpa="false" schemaversion="5">
+<suite id="s1" name="Screencap testcases" source="C:\Phawat\cs-project\testcases\Screencap_testcases.robot">
+<test id="s1-t1" name="TC x. 1 ScreenCap" line="12">
+<kw name="Given Open Browser" owner="SeleniumLibrary">
+<msg time="2025-03-30T18:16:32.350711" level="INFO">Opening browser 'Chrome' to base url 'https://www.scb.co.th/th/personal-banking'.</msg>
+<msg time="2025-03-30T18:16:33.174200" level="WARN">The chromedriver version (133.0.6943.53) detected in PATH at C:\Phawat\chomedriverfortesting\chromedriver-win64\chromedriver.exe might not be compatible with the detected chrome version (134.0.6998.178); currently, chromedriver 134.0.6998.165 is recommended for chrome 134.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>${scb_web}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-03-30T18:16:32.349620" elapsed="6.117625"/>
+</kw>
+<kw name="Start Video Recording for Test" owner="Screencap_keywords">
+<kw name="Start Video Recording" owner="ScreenCapLibrary">
+<msg time="2025-03-30T18:16:40.697978" level="INFO">Automatically setting a fps of 3.5</msg>
+<arg>alias=${alias}</arg>
+<arg>name=${name}</arg>
+<doc>Starts the recording of a video in the background with the specified ``name``.
+The recording can be stopped by calling the `Stop Video Recording` keyword.</doc>
+<status status="PASS" start="2025-03-30T18:16:38.470011" elapsed="2.236202"/>
+</kw>
+<arg>demotest</arg>
+<arg>TCx.1ScreenCap</arg>
+<status status="PASS" start="2025-03-30T18:16:38.469011" elapsed="2.238199"/>
+</kw>
+<kw name="And Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-03-30T18:16:40.708753" elapsed="0.132050"/>
+</kw>
+<kw name="Then Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${search_textfield}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-03-30T18:16:40.842805" elapsed="0.226293"/>
+</kw>
+<kw name="And Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-30T18:16:41.074601" level="INFO">Typing text 'scbeasy' into text field '//input[@placeholder = "พิมพ์สิ่งที่ต้องการค้นหา" and @name = "q"]'.</msg>
+<arg>${search_textfield}</arg>
+<arg>scbeasy</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-30T18:16:41.072618" elapsed="0.363619"/>
+</kw>
+<kw name="Then Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${search_button}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-03-30T18:16:41.438764" elapsed="0.091949"/>
+</kw>
+<kw name="And Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-30T18:16:41.533704" level="INFO">Clicking element '//button[contains(text(),"ค้นหา")]'.</msg>
+<arg>${search_button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-30T18:16:41.532705" elapsed="0.438780"/>
+</kw>
+<kw name="Then Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${header_scbeasyapp}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-03-30T18:16:41.973348" elapsed="0.787093"/>
+</kw>
+<kw name="And Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-03-30T18:16:42.762210" elapsed="2.434000"/>
+</kw>
+<tag>test</tag>
+<status status="PASS" start="2025-03-30T18:16:32.348623" elapsed="12.849512"/>
+</test>
+<test id="s1-t2" name="TC x. 2 ScreenCap" line="25">
+<kw name="Given Open Browser" owner="SeleniumLibrary">
+<msg time="2025-03-30T18:16:45.202168" level="INFO">Opening browser 'Chrome' to base url 'https://www.scb.co.th/th/personal-banking'.</msg>
+<msg time="2025-03-30T18:16:45.755012" level="WARN">The chromedriver version (133.0.6943.53) detected in PATH at C:\Phawat\chomedriverfortesting\chromedriver-win64\chromedriver.exe might not be compatible with the detected chrome version (134.0.6998.178); currently, chromedriver 134.0.6998.165 is recommended for chrome 134.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>${scb_web}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-03-30T18:16:45.201123" elapsed="5.937419"/>
+</kw>
+<kw name="Start Video Recording" owner="ScreenCapLibrary">
+<msg time="2025-03-30T18:16:53.503681" level="INFO">Automatically setting a fps of 3.0</msg>
+<arg>demotest</arg>
+<arg>TCx.2ScreenCap</arg>
+<doc>Starts the recording of a video in the background with the specified ``name``.
+The recording can be stopped by calling the `Stop Video Recording` keyword.</doc>
+<status status="PASS" start="2025-03-30T18:16:51.140035" elapsed="2.371655"/>
+</kw>
+<kw name="And Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-03-30T18:16:53.522683" elapsed="0.157842"/>
+</kw>
+<kw name="Then Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${search_textfield}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-03-30T18:16:53.681524" elapsed="0.217092"/>
+</kw>
+<kw name="And Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-30T18:16:53.900606" level="INFO">Typing text 'scbeasy' into text field '//input[@placeholder = "พิมพ์สิ่งที่ต้องการค้นหา" and @name = "q"]'.</msg>
+<arg>${search_textfield}</arg>
+<arg>scbeasy</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-30T18:16:53.899598" elapsed="0.553873"/>
+</kw>
+<kw name="Then Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${search_button}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-03-30T18:16:54.455517" elapsed="0.074869"/>
+</kw>
+<kw name="And Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-30T18:16:54.533400" level="INFO">Clicking element '//button[contains(text(),"ค้นหา")]'.</msg>
+<arg>${search_button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-30T18:16:54.532397" elapsed="0.292948"/>
+</kw>
+<kw name="Then Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2025-03-30T18:16:55.880798" level="INFO">Suppressing StaleElementReferenceException from Selenium.</msg>
+<arg>${header_scbeasyapp}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-03-30T18:16:54.829907" elapsed="1.298202"/>
+</kw>
+<kw name="Stop Video Recording for Test" owner="Screencap_keywords">
+<kw name="Stop Video Recording" owner="ScreenCapLibrary">
+<msg time="2025-03-30T18:16:56.259721" level="INFO" html="true">&lt;a href="TCx.1ScreenCap_1.webm"&gt;&lt;video width="800px" autoplay&gt;&lt;source src="TCx.1ScreenCap_1.webm" type="video/webm"&gt;&lt;/video&gt;&lt;/a&gt;</msg>
+<msg time="2025-03-30T18:16:56.322652" level="INFO" html="true">&lt;a href="TCx.2ScreenCap_1.webm"&gt;&lt;video width="800px" autoplay&gt;&lt;source src="TCx.2ScreenCap_1.webm" type="video/webm"&gt;&lt;/video&gt;&lt;/a&gt;</msg>
+<arg>alias=${alias}</arg>
+<doc>Stops the video recording corresponding to the given ``alias`` and generates the file in WebM format. If no
+``alias`` is specified, the last opened recording will be closed. If there are more recordings with the same
+alias all of them will be closed. If ``embed`` argument was set to
+``True`` the video will be displayed in the log file.
+Furthermore, if the ``save_to_disk`` parameter is set to ``False``, the video will be embedded and available in
+the log file only.</doc>
+<status status="PASS" start="2025-03-30T18:16:56.132108" elapsed="0.190544"/>
+</kw>
+<arg>demotest</arg>
+<status status="PASS" start="2025-03-30T18:16:56.130105" elapsed="0.193552"/>
+</kw>
+<kw name="And Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-03-30T18:16:56.325652" elapsed="2.442756"/>
+</kw>
+<tag>test</tag>
+<status status="PASS" start="2025-03-30T18:16:45.199918" elapsed="13.569400"/>
+</test>
+<test id="s1-t3" name="TC x. 3 ScreenCap" line="39">
+<kw name="Given Open Browser" owner="SeleniumLibrary">
+<msg time="2025-03-30T18:16:58.771315" level="INFO">Opening browser 'Chrome' to base url 'https://www.scb.co.th/th/personal-banking'.</msg>
+<msg time="2025-03-30T18:16:59.401362" level="WARN">The chromedriver version (133.0.6943.53) detected in PATH at C:\Phawat\chomedriverfortesting\chromedriver-win64\chromedriver.exe might not be compatible with the detected chrome version (134.0.6998.178); currently, chromedriver 134.0.6998.165 is recommended for chrome 134.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>${scb_web}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-03-30T18:16:58.771315" elapsed="6.310768"/>
+</kw>
+<kw name="Start Video Recording" owner="ScreenCapLibrary">
+<msg time="2025-03-30T18:17:07.224960" level="INFO">Automatically setting a fps of 3.0</msg>
+<arg>demotest1</arg>
+<arg>TCx.3ScreenCap</arg>
+<doc>Starts the recording of a video in the background with the specified ``name``.
+The recording can be stopped by calling the `Stop Video Recording` keyword.</doc>
+<status status="PASS" start="2025-03-30T18:17:05.083105" elapsed="2.148333"/>
+</kw>
+<kw name="And Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-03-30T18:17:07.233443" elapsed="0.137596"/>
+</kw>
+<kw name="Start Video Recording" owner="ScreenCapLibrary">
+<msg time="2025-03-30T18:17:09.645192" level="INFO">Automatically setting a fps of 2.5</msg>
+<arg>demotest2</arg>
+<arg>TCx.3ScreenCap</arg>
+<doc>Starts the recording of a video in the background with the specified ``name``.
+The recording can be stopped by calling the `Stop Video Recording` keyword.</doc>
+<status status="PASS" start="2025-03-30T18:17:07.371934" elapsed="2.280913"/>
+</kw>
+<kw name="Then Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${search_textfield}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-03-30T18:17:09.659847" elapsed="0.075361"/>
+</kw>
+<kw name="And Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-30T18:17:09.740179" level="INFO">Typing text 'scbeasy' into text field '//input[@placeholder = "พิมพ์สิ่งที่ต้องการค้นหา" and @name = "q"]'.</msg>
+<arg>${search_textfield}</arg>
+<arg>scbeasy</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-30T18:17:09.738158" elapsed="0.236743"/>
+</kw>
+<kw name="Then Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${search_button}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-03-30T18:17:09.976901" elapsed="0.060978"/>
+</kw>
+<kw name="And Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-30T18:17:10.048878" level="INFO">Clicking element '//button[contains(text(),"ค้นหา")]'.</msg>
+<arg>${search_button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-30T18:17:10.047878" elapsed="0.368723"/>
+</kw>
+<kw name="Then Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2025-03-30T18:17:11.472879" level="INFO">Suppressing StaleElementReferenceException from Selenium.</msg>
+<arg>${header_scbeasyapp}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-03-30T18:17:10.423434" elapsed="1.286455"/>
+</kw>
+<kw name="Stop Video Recording for Test" owner="Screencap_keywords">
+<kw name="Stop Video Recording" owner="ScreenCapLibrary">
+<msg time="2025-03-30T18:17:11.930143" level="INFO" html="true">&lt;a href="TCx.3ScreenCap_1.webm"&gt;&lt;video width="800px" autoplay&gt;&lt;source src="TCx.3ScreenCap_1.webm" type="video/webm"&gt;&lt;/video&gt;&lt;/a&gt;</msg>
+<arg>alias=${alias}</arg>
+<doc>Stops the video recording corresponding to the given ``alias`` and generates the file in WebM format. If no
+``alias`` is specified, the last opened recording will be closed. If there are more recordings with the same
+alias all of them will be closed. If ``embed`` argument was set to
+``True`` the video will be displayed in the log file.
+Furthermore, if the ``save_to_disk`` parameter is set to ``False``, the video will be embedded and available in
+the log file only.</doc>
+<status status="PASS" start="2025-03-30T18:17:11.713117" elapsed="0.217026"/>
+</kw>
+<arg>demotest1</arg>
+<status status="PASS" start="2025-03-30T18:17:11.711634" elapsed="0.219536"/>
+</kw>
+<kw name="And Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-03-30T18:17:11.932231" elapsed="2.499420"/>
+</kw>
+<tag>test</tag>
+<status status="PASS" start="2025-03-30T18:16:58.770316" elapsed="15.661836"/>
+</test>
+<test id="s1-t4" name="TC x. 4 ScreenCap" line="54">
+<kw name="Given Open Browser" owner="SeleniumLibrary">
+<msg time="2025-03-30T18:17:14.433957" level="INFO">Opening browser 'Chrome' to base url 'https://www.scb.co.th/th/personal-banking'.</msg>
+<msg time="2025-03-30T18:17:15.113549" level="WARN">The chromedriver version (133.0.6943.53) detected in PATH at C:\Phawat\chomedriverfortesting\chromedriver-win64\chromedriver.exe might not be compatible with the detected chrome version (134.0.6998.178); currently, chromedriver 134.0.6998.165 is recommended for chrome 134.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>${scb_web}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-03-30T18:17:14.433957" elapsed="5.730198"/>
+</kw>
+<kw name="Start Video Recording" owner="ScreenCapLibrary">
+<msg time="2025-03-30T18:17:22.363129" level="INFO">Automatically setting a fps of 3.0</msg>
+<arg>demotest1</arg>
+<arg>TCx.4ScreenCap</arg>
+<doc>Starts the recording of a video in the background with the specified ``name``.
+The recording can be stopped by calling the `Stop Video Recording` keyword.</doc>
+<status status="PASS" start="2025-03-30T18:17:20.165383" elapsed="2.204702"/>
+</kw>
+<kw name="And Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-03-30T18:17:22.373514" elapsed="0.153621"/>
+</kw>
+<kw name="Start Video Recording" owner="ScreenCapLibrary">
+<msg time="2025-03-30T18:17:24.874461" level="INFO">Automatically setting a fps of 2.5</msg>
+<arg>demotest2</arg>
+<arg>TCx.4ScreenCap</arg>
+<doc>Starts the recording of a video in the background with the specified ``name``.
+The recording can be stopped by calling the `Stop Video Recording` keyword.</doc>
+<status status="PASS" start="2025-03-30T18:17:22.528146" elapsed="2.353870"/>
+</kw>
+<kw name="Then Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${search_textfield}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-03-30T18:17:24.890011" elapsed="0.085782"/>
+</kw>
+<kw name="And Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-30T18:17:24.979300" level="INFO">Typing text 'scbeasy' into text field '//input[@placeholder = "พิมพ์สิ่งที่ต้องการค้นหา" and @name = "q"]'.</msg>
+<arg>${search_textfield}</arg>
+<arg>scbeasy</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-30T18:17:24.977814" elapsed="0.274035"/>
+</kw>
+<kw name="Then Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${search_button}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-03-30T18:17:25.253849" elapsed="0.075694"/>
+</kw>
+<kw name="And Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-30T18:17:25.333540" level="INFO">Clicking element '//button[contains(text(),"ค้นหา")]'.</msg>
+<arg>${search_button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-30T18:17:25.331540" elapsed="0.429263"/>
+</kw>
+<kw name="Then Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${header_scbeasyapp}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-03-30T18:17:25.763886" elapsed="1.247947"/>
+</kw>
+<kw name="Stop Video Recording for Test" owner="Screencap_keywords">
+<kw name="Stop Video Recording" owner="ScreenCapLibrary">
+<msg time="2025-03-30T18:17:27.201797" level="INFO" html="true">&lt;a href="TCx.4ScreenCap_1.webm"&gt;&lt;video width="800px" autoplay&gt;&lt;source src="TCx.4ScreenCap_1.webm" type="video/webm"&gt;&lt;/video&gt;&lt;/a&gt;</msg>
+<arg>alias=${alias}</arg>
+<doc>Stops the video recording corresponding to the given ``alias`` and generates the file in WebM format. If no
+``alias`` is specified, the last opened recording will be closed. If there are more recordings with the same
+alias all of them will be closed. If ``embed`` argument was set to
+``True`` the video will be displayed in the log file.
+Furthermore, if the ``save_to_disk`` parameter is set to ``False``, the video will be embedded and available in
+the log file only.</doc>
+<status status="PASS" start="2025-03-30T18:17:27.014833" elapsed="0.186964"/>
+</kw>
+<arg>demotest1</arg>
+<status status="PASS" start="2025-03-30T18:17:27.013829" elapsed="0.188971"/>
+</kw>
+<kw name="Stop Video Recording for Test" owner="Screencap_keywords">
+<kw name="Stop Video Recording" owner="ScreenCapLibrary">
+<msg time="2025-03-30T18:17:27.356172" level="INFO" html="true">&lt;a href="TCx.3ScreenCap_2.webm"&gt;&lt;video width="800px" autoplay&gt;&lt;source src="TCx.3ScreenCap_2.webm" type="video/webm"&gt;&lt;/video&gt;&lt;/a&gt;</msg>
+<msg time="2025-03-30T18:17:27.522697" level="INFO" html="true">&lt;a href="TCx.4ScreenCap_2.webm"&gt;&lt;video width="800px" autoplay&gt;&lt;source src="TCx.4ScreenCap_2.webm" type="video/webm"&gt;&lt;/video&gt;&lt;/a&gt;</msg>
+<arg>alias=${alias}</arg>
+<doc>Stops the video recording corresponding to the given ``alias`` and generates the file in WebM format. If no
+``alias`` is specified, the last opened recording will be closed. If there are more recordings with the same
+alias all of them will be closed. If ``embed`` argument was set to
+``True`` the video will be displayed in the log file.
+Furthermore, if the ``save_to_disk`` parameter is set to ``False``, the video will be embedded and available in
+the log file only.</doc>
+<status status="PASS" start="2025-03-30T18:17:27.204799" elapsed="0.318900"/>
+</kw>
+<arg>demotest2</arg>
+<status status="PASS" start="2025-03-30T18:17:27.203806" elapsed="0.320887"/>
+</kw>
+<kw name="And Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-03-30T18:17:27.525692" elapsed="2.435232"/>
+</kw>
+<tag>test</tag>
+<status status="PASS" start="2025-03-30T18:17:14.432920" elapsed="15.529164"/>
+</test>
+<test id="s1-t5" name="TC x. 5 ScreenCap" line="70">
+<kw name="Given Open Browser" owner="SeleniumLibrary">
+<msg time="2025-03-30T18:17:29.964280" level="INFO">Opening browser 'Chrome' to base url 'https://www.scb.co.th/th/personal-banking'.</msg>
+<msg time="2025-03-30T18:17:30.524085" level="WARN">The chromedriver version (133.0.6943.53) detected in PATH at C:\Phawat\chomedriverfortesting\chromedriver-win64\chromedriver.exe might not be compatible with the detected chrome version (134.0.6998.178); currently, chromedriver 134.0.6998.165 is recommended for chrome 134.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>${scb_web}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-03-30T18:17:29.963779" elapsed="6.028637"/>
+</kw>
+<kw name="Start Video Recording" owner="ScreenCapLibrary">
+<msg time="2025-03-30T18:17:38.337595" level="INFO">Automatically setting a fps of 4.0</msg>
+<arg>demotest1</arg>
+<arg>TCx.5ScreenCap</arg>
+<doc>Starts the recording of a video in the background with the specified ``name``.
+The recording can be stopped by calling the `Stop Video Recording` keyword.</doc>
+<status status="PASS" start="2025-03-30T18:17:35.995469" elapsed="2.348785"/>
+</kw>
+<kw name="And Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-03-30T18:17:38.351637" elapsed="0.173186"/>
+</kw>
+<kw name="Start Video Recording" owner="ScreenCapLibrary">
+<msg time="2025-03-30T18:17:40.830956" level="INFO">Automatically setting a fps of 2.5</msg>
+<arg>demotest2</arg>
+<arg>TCx.5ScreenCap</arg>
+<doc>Starts the recording of a video in the background with the specified ``name``.
+The recording can be stopped by calling the `Stop Video Recording` keyword.</doc>
+<status status="PASS" start="2025-03-30T18:17:38.525961" elapsed="2.311260"/>
+</kw>
+<kw name="Then Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${search_textfield}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-03-30T18:17:40.843222" elapsed="0.074407"/>
+</kw>
+<kw name="And Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-30T18:17:40.920520" level="INFO">Typing text 'scbeasy' into text field '//input[@placeholder = "พิมพ์สิ่งที่ต้องการค้นหา" and @name = "q"]'.</msg>
+<arg>${search_textfield}</arg>
+<arg>scbeasy</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-30T18:17:40.919280" elapsed="0.239942"/>
+</kw>
+<kw name="Then Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${search_button}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-03-30T18:17:41.163097" elapsed="0.081639"/>
+</kw>
+<kw name="And Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-30T18:17:41.248736" level="INFO">Clicking element '//button[contains(text(),"ค้นหา")]'.</msg>
+<arg>${search_button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-30T18:17:41.246733" elapsed="0.324959"/>
+</kw>
+<kw name="Then Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${header_scbeasyapp}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-03-30T18:17:41.573084" elapsed="1.197679"/>
+</kw>
+<kw name="Stop All Video Recordings for Test" owner="Screencap_keywords">
+<kw name="Stop All Video Recordings" owner="ScreenCapLibrary">
+<msg time="2025-03-30T18:17:42.889826" level="INFO" html="true">&lt;a href="TCx.5ScreenCap_1.webm"&gt;&lt;video width="800px" autoplay&gt;&lt;source src="TCx.5ScreenCap_1.webm" type="video/webm"&gt;&lt;/video&gt;&lt;/a&gt;</msg>
+<msg time="2025-03-30T18:17:43.171947" level="INFO" html="true">&lt;a href="TCx.5ScreenCap_2.webm"&gt;&lt;video width="800px" autoplay&gt;&lt;source src="TCx.5ScreenCap_2.webm" type="video/webm"&gt;&lt;/video&gt;&lt;/a&gt;</msg>
+<doc>Stops all the video recordings and generates the files in WebM format. If ``embed`` argument
+was set to ``True`` the videos will be displayed in the log file.</doc>
+<status status="PASS" start="2025-03-30T18:17:42.774765" elapsed="0.398466"/>
+</kw>
+<status status="PASS" start="2025-03-30T18:17:42.772769" elapsed="0.400965"/>
+</kw>
+<kw name="And Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-03-30T18:17:43.176704" elapsed="2.469807"/>
+</kw>
+<tag>test</tag>
+<status status="PASS" start="2025-03-30T18:17:29.963084" elapsed="15.684428"/>
+</test>
+<test id="s1-t6" name="TC x. 6 ScreenCap" line="85">
+<kw name="Given Open Browser" owner="SeleniumLibrary">
+<msg time="2025-03-30T18:17:45.650589" level="INFO">Opening browser 'Chrome' to base url 'https://www.scb.co.th/th/personal-banking'.</msg>
+<msg time="2025-03-30T18:17:46.294349" level="WARN">The chromedriver version (133.0.6943.53) detected in PATH at C:\Phawat\chomedriverfortesting\chromedriver-win64\chromedriver.exe might not be compatible with the detected chrome version (134.0.6998.178); currently, chromedriver 134.0.6998.165 is recommended for chrome 134.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>${scb_web}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-03-30T18:17:45.650089" elapsed="5.573061"/>
+</kw>
+<kw name="Start Video Recording" owner="ScreenCapLibrary">
+<msg time="2025-03-30T18:17:53.400636" level="INFO">Automatically setting a fps of 3.5</msg>
+<arg>demotest</arg>
+<arg>TCx.6ScreenCap</arg>
+<doc>Starts the recording of a video in the background with the specified ``name``.
+The recording can be stopped by calling the `Stop Video Recording` keyword.</doc>
+<status status="PASS" start="2025-03-30T18:17:51.233637" elapsed="2.174007"/>
+</kw>
+<kw name="And Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-03-30T18:17:53.414632" elapsed="0.169112"/>
+</kw>
+<kw name="Then Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${search_textfield}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-03-30T18:17:53.587447" elapsed="0.248313"/>
+</kw>
+<kw name="And Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-30T18:17:53.838899" level="INFO">Typing text 'scbeasy' into text field '//input[@placeholder = "พิมพ์สิ่งที่ต้องการค้นหา" and @name = "q"]'.</msg>
+<arg>${search_textfield}</arg>
+<arg>scbeasy</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-30T18:17:53.837622" elapsed="0.470684"/>
+</kw>
+<kw name="Pause Video Recording" owner="ScreenCapLibrary">
+<arg>demotest</arg>
+<doc>Temporarily stops the video recording corresponding to the given ``alias``. If no ``alias`` is specified the
+last started recording would be paused. If there are more recordings with the same
+alias all of them will be paused.</doc>
+<status status="PASS" start="2025-03-30T18:17:54.312302" elapsed="0.001004"/>
+</kw>
+<kw name="Then Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${search_button}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-03-30T18:17:54.320302" elapsed="0.104637"/>
+</kw>
+<kw name="And Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-30T18:17:54.427938" level="INFO">Clicking element '//button[contains(text(),"ค้นหา")]'.</msg>
+<arg>${search_button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-30T18:17:54.426945" elapsed="0.283996"/>
+</kw>
+<kw name="Then Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${header_scbeasyapp}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-03-30T18:17:54.712065" elapsed="0.963120"/>
+</kw>
+<kw name="And Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-03-30T18:17:55.676692" elapsed="2.428207"/>
+</kw>
+<tag>test</tag>
+<status status="PASS" start="2025-03-30T18:17:45.648580" elapsed="12.457544"/>
+</test>
+<test id="s1-t7" name="TC x. 7 ScreenCap" line="98">
+<kw name="Given Open Browser" owner="SeleniumLibrary">
+<msg time="2025-03-30T18:17:58.108876" level="INFO">Opening browser 'Chrome' to base url 'https://www.scb.co.th/th/personal-banking'.</msg>
+<msg time="2025-03-30T18:17:58.736197" level="WARN">The chromedriver version (133.0.6943.53) detected in PATH at C:\Phawat\chomedriverfortesting\chromedriver-win64\chromedriver.exe might not be compatible with the detected chrome version (134.0.6998.178); currently, chromedriver 134.0.6998.165 is recommended for chrome 134.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>${scb_web}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-03-30T18:17:58.107858" elapsed="5.842672"/>
+</kw>
+<kw name="Start Video Recording" owner="ScreenCapLibrary">
+<msg time="2025-03-30T18:18:06.219559" level="INFO">Automatically setting a fps of 4.0</msg>
+<arg>demotest</arg>
+<arg>TCx.7ScreenCap</arg>
+<doc>Starts the recording of a video in the background with the specified ``name``.
+The recording can be stopped by calling the `Stop Video Recording` keyword.</doc>
+<status status="PASS" start="2025-03-30T18:18:03.951327" elapsed="2.273748"/>
+</kw>
+<kw name="And Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-03-30T18:18:06.228060" elapsed="0.120953"/>
+</kw>
+<kw name="Then Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${search_textfield}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-03-30T18:18:06.351201" elapsed="0.231783"/>
+</kw>
+<kw name="And Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-30T18:18:06.587206" level="INFO">Typing text 'scbeasy' into text field '//input[@placeholder = "พิมพ์สิ่งที่ต้องการค้นหา" and @name = "q"]'.</msg>
+<arg>${search_textfield}</arg>
+<arg>scbeasy</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-30T18:18:06.584983" elapsed="0.512443"/>
+</kw>
+<kw name="Pause Video Recording" owner="ScreenCapLibrary">
+<arg>demotest</arg>
+<doc>Temporarily stops the video recording corresponding to the given ``alias``. If no ``alias`` is specified the
+last started recording would be paused. If there are more recordings with the same
+alias all of them will be paused.</doc>
+<status status="PASS" start="2025-03-30T18:18:07.098626" elapsed="0.000995"/>
+</kw>
+<kw name="Then Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${search_button}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-03-30T18:18:07.101626" elapsed="0.086293"/>
+</kw>
+<kw name="And Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-30T18:18:07.190932" level="INFO">Clicking element '//button[contains(text(),"ค้นหา")]'.</msg>
+<arg>${search_button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-30T18:18:07.189926" elapsed="0.245393"/>
+</kw>
+<kw name="Then Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${header_scbeasyapp}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-03-30T18:18:07.440282" elapsed="1.054516"/>
+</kw>
+<kw name="Resume Video Recording" owner="ScreenCapLibrary">
+<arg>demotest</arg>
+<doc>Resumes the previous paused video recording corresponding to the given ``alias``. If no ``alias`` is
+specified the last paused recording would be resumed. If there are more recordings with the same alias all of them
+ will be resumed.</doc>
+<status status="PASS" start="2025-03-30T18:18:08.496800" elapsed="0.000997"/>
+</kw>
+<kw name="And Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-03-30T18:18:08.500301" elapsed="2.483280"/>
+</kw>
+<tag>test</tag>
+<status status="PASS" start="2025-03-30T18:17:58.107454" elapsed="12.877369"/>
+</test>
+<test id="s1-t8" name="TC x. 8 ScreenCap" line="113">
+<kw name="Given Open Browser" owner="SeleniumLibrary">
+<msg time="2025-03-30T18:18:10.987810" level="INFO">Opening browser 'Chrome' to base url 'https://www.scb.co.th/th/personal-banking'.</msg>
+<msg time="2025-03-30T18:18:11.632364" level="WARN">The chromedriver version (133.0.6943.53) detected in PATH at C:\Phawat\chomedriverfortesting\chromedriver-win64\chromedriver.exe might not be compatible with the detected chrome version (134.0.6998.178); currently, chromedriver 134.0.6998.165 is recommended for chrome 134.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>${scb_web}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-03-30T18:18:10.987810" elapsed="2.290824"/>
+</kw>
+<kw name="Start Video Recording" owner="ScreenCapLibrary">
+<msg time="2025-03-30T18:18:15.514217" level="INFO">Automatically setting a fps of 3.0</msg>
+<arg>demotest</arg>
+<arg>TCx.8ScreenCap</arg>
+<doc>Starts the recording of a video in the background with the specified ``name``.
+The recording can be stopped by calling the `Stop Video Recording` keyword.</doc>
+<status status="PASS" start="2025-03-30T18:18:13.284187" elapsed="2.244608"/>
+</kw>
+<kw name="And Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-03-30T18:18:15.535704" elapsed="1.245143"/>
+</kw>
+<kw name="Then Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${search_textfield}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-03-30T18:18:16.794661" elapsed="0.589554"/>
+</kw>
+<kw name="And Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-30T18:18:17.387448" level="INFO">Typing text 'scbeasy' into text field '//input[@placeholder = "พิมพ์สิ่งที่ต้องการค้นหา" and @name = "q"]'.</msg>
+<arg>${search_textfield}</arg>
+<arg>scbeasy</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-30T18:18:17.386192" elapsed="0.279034"/>
+</kw>
+<kw name="Pause Video Recording" owner="ScreenCapLibrary">
+<arg>demotest</arg>
+<doc>Temporarily stops the video recording corresponding to the given ``alias``. If no ``alias`` is specified the
+last started recording would be paused. If there are more recordings with the same
+alias all of them will be paused.</doc>
+<status status="PASS" start="2025-03-30T18:18:17.666501" elapsed="0.001037"/>
+</kw>
+<kw name="Then Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${search_button}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-03-30T18:18:17.669050" elapsed="0.056291"/>
+</kw>
+<kw name="And Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-30T18:18:17.727829" level="INFO">Clicking element '//button[contains(text(),"ค้นหา")]'.</msg>
+<arg>${search_button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-30T18:18:17.727323" elapsed="0.222589"/>
+</kw>
+<kw name="Then Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${header_scbeasyapp}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-03-30T18:18:17.953429" elapsed="1.193702"/>
+</kw>
+<kw name="Resume Video Recording" owner="ScreenCapLibrary">
+<arg>demotest</arg>
+<doc>Resumes the previous paused video recording corresponding to the given ``alias``. If no ``alias`` is
+specified the last paused recording would be resumed. If there are more recordings with the same alias all of them
+ will be resumed.</doc>
+<status status="PASS" start="2025-03-30T18:18:19.149129" elapsed="0.000987"/>
+</kw>
+<kw name="Stop Video Recording for Test" owner="Screencap_keywords">
+<kw name="Stop Video Recording" owner="ScreenCapLibrary">
+<msg time="2025-03-30T18:18:19.692064" level="INFO" html="true">&lt;a href="TCx.6ScreenCap_1.webm"&gt;&lt;video width="800px" autoplay&gt;&lt;source src="TCx.6ScreenCap_1.webm" type="video/webm"&gt;&lt;/video&gt;&lt;/a&gt;</msg>
+<msg time="2025-03-30T18:18:20.172351" level="INFO" html="true">&lt;a href="TCx.7ScreenCap_1.webm"&gt;&lt;video width="800px" autoplay&gt;&lt;source src="TCx.7ScreenCap_1.webm" type="video/webm"&gt;&lt;/video&gt;&lt;/a&gt;</msg>
+<msg time="2025-03-30T18:18:20.290482" level="INFO" html="true">&lt;a href="TCx.8ScreenCap_1.webm"&gt;&lt;video width="800px" autoplay&gt;&lt;source src="TCx.8ScreenCap_1.webm" type="video/webm"&gt;&lt;/video&gt;&lt;/a&gt;</msg>
+<arg>alias=${alias}</arg>
+<doc>Stops the video recording corresponding to the given ``alias`` and generates the file in WebM format. If no
+``alias`` is specified, the last opened recording will be closed. If there are more recordings with the same
+alias all of them will be closed. If ``embed`` argument was set to
+``True`` the video will be displayed in the log file.
+Furthermore, if the ``save_to_disk`` parameter is set to ``False``, the video will be embedded and available in
+the log file only.</doc>
+<status status="PASS" start="2025-03-30T18:18:19.152808" elapsed="1.137674"/>
+</kw>
+<arg>demotest</arg>
+<status status="PASS" start="2025-03-30T18:18:19.152120" elapsed="1.139366"/>
+</kw>
+<kw name="And Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-03-30T18:18:20.292484" elapsed="2.429570"/>
+</kw>
+<tag>test</tag>
+<status status="PASS" start="2025-03-30T18:18:10.986648" elapsed="11.737327"/>
+</test>
+<status status="PASS" start="2025-03-30T18:16:31.730767" elapsed="110.996206"/>
+</suite>
+<statistics>
+<total>
+<stat pass="8" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="8" fail="0" skip="0">test</stat>
+</tag>
+<suite>
+<stat pass="8" fail="0" skip="0" id="s1" name="Screencap testcases">Screencap testcases</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-03-30T18:16:33.174200" level="WARN">The chromedriver version (133.0.6943.53) detected in PATH at C:\Phawat\chomedriverfortesting\chromedriver-win64\chromedriver.exe might not be compatible with the detected chrome version (134.0.6998.178); currently, chromedriver 134.0.6998.165 is recommended for chrome 134.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2025-03-30T18:16:45.755012" level="WARN">The chromedriver version (133.0.6943.53) detected in PATH at C:\Phawat\chomedriverfortesting\chromedriver-win64\chromedriver.exe might not be compatible with the detected chrome version (134.0.6998.178); currently, chromedriver 134.0.6998.165 is recommended for chrome 134.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2025-03-30T18:16:59.401362" level="WARN">The chromedriver version (133.0.6943.53) detected in PATH at C:\Phawat\chomedriverfortesting\chromedriver-win64\chromedriver.exe might not be compatible with the detected chrome version (134.0.6998.178); currently, chromedriver 134.0.6998.165 is recommended for chrome 134.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2025-03-30T18:17:15.113549" level="WARN">The chromedriver version (133.0.6943.53) detected in PATH at C:\Phawat\chomedriverfortesting\chromedriver-win64\chromedriver.exe might not be compatible with the detected chrome version (134.0.6998.178); currently, chromedriver 134.0.6998.165 is recommended for chrome 134.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2025-03-30T18:17:30.524085" level="WARN">The chromedriver version (133.0.6943.53) detected in PATH at C:\Phawat\chomedriverfortesting\chromedriver-win64\chromedriver.exe might not be compatible with the detected chrome version (134.0.6998.178); currently, chromedriver 134.0.6998.165 is recommended for chrome 134.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2025-03-30T18:17:46.294349" level="WARN">The chromedriver version (133.0.6943.53) detected in PATH at C:\Phawat\chomedriverfortesting\chromedriver-win64\chromedriver.exe might not be compatible with the detected chrome version (134.0.6998.178); currently, chromedriver 134.0.6998.165 is recommended for chrome 134.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2025-03-30T18:17:58.736197" level="WARN">The chromedriver version (133.0.6943.53) detected in PATH at C:\Phawat\chomedriverfortesting\chromedriver-win64\chromedriver.exe might not be compatible with the detected chrome version (134.0.6998.178); currently, chromedriver 134.0.6998.165 is recommended for chrome 134.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2025-03-30T18:18:11.632364" level="WARN">The chromedriver version (133.0.6943.53) detected in PATH at C:\Phawat\chomedriverfortesting\chromedriver-win64\chromedriver.exe might not be compatible with the detected chrome version (134.0.6998.178); currently, chromedriver 134.0.6998.165 is recommended for chrome 134.*, so it is advised to delete the driver in PATH and retry</msg>
+</errors>
+</robot>
