@@ -37,3 +37,8 @@ CS-PROJECT/
 pip install robotframework
 pip install robotframework-doctest
 pip install robotframework-screencaplibrary
+```
+
+👤 Author
+
+Phawat Pongthawaradet
